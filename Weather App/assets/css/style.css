@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape,mumbai');
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.card {
+  background: #020202dc;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 40px;
+  color: white;
+}
+
+input.search-bar {
+  border-radius: 24px;
+  padding: 0.5em 1em;
+  outline: none;
+  background: #53535380;
+  color: white;
+  border: none;
+  font-family: inherit;
+  font-size: 120%;
+}
+
+.search {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+button.search {
+  margin-left: 5px;
+  border-radius: 25px;
+  border: none;
+  width: 52px;
+  height: 52px;
+  background: #53535380;
+  color: white;
+  vertical-align: bottom;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+h1.city {
+  margin: 5px auto;
+  font-weight: 100;
+  font-size: 250%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h3.date {
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  font-size: 125%;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.temp {
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.humidity {
+  margin-left: 8px;
+}
+
+.wind {
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: 'Loading....';
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
